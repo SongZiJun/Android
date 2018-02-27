@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/kcbg"
+    xmlns:hyman="http://schemas.android.com/apk/com.example.xiti8.myapplication_listview"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp">
+
+
+        <Button
+            android:id="@+id/imageButton_Online"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:text="线上找课"
+            android:background="@drawable/online_button" />
+
+        <Button
+
+            android:id="@+id/imageButton2_Offline"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_marginRight="30dp"
+            android:text="线下约课"
+            android:background="@drawable/xianxia_button"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/shadow"
+        android:layout_marginTop="3dp"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!--以下为资源列表-->
+        <ListView
+            android:background="#fff"
+            android:divider="@null"
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dp" />
+
+        <com.example.xiti8.myapplication_listview.MyMenu
+            android:id="@+id/mymenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-50dp"
+            hyman:position="right_bottom"
+            hyman:radius="550dp">
+
+            <!--主按钮-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/composer_button">
+                <!--主按钮-->
+                <ImageView
+                    android:id="@+id/id_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/composer_icn_plus" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/sechch"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/sechch"
+
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/kecheng2png"
+                android:tag="Kecheng" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/fenxiang"
+                android:tag="Fenxiang" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/my"
+                android:tag="Sechch" />
+
+
+        </com.example.xiti8.myapplication_listview.MyMenu>
+
+    </FrameLayout>
+</LinearLayout>

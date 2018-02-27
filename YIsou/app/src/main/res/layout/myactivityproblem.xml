@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wt"
+    >
+    <EditText
+        android:id="@+id/et_leixing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:hint="请输入问题的类型"
+        />
+    <EditText
+        android:id="@+id/et_wenti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入问题的详细描述"
+        />
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入您的联系方式"
+        />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_marginTop="20dp"
+        android:layout_width="233dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:background="@drawable/login_shap"
+        android:padding="10dp"
+        android:text="发表问题"
+        android:textColor="#fff" />
+</LinearLayout>

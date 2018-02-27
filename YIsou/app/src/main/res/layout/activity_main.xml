@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:hyman="http://schemas.android.com/apk/com.example.xiti8.myapplication_listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xiti8.myapplication_listview.MainActivity">
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        //问题列表
+
+        <ListView
+            android:id="@+id/listView_problem"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff" />
+
+        <!--自定义控件-->
+        <com.example.xiti8.myapplication_listview.MyMenu
+             android:id="@+id/mymenu"
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             hyman:position="right_bottom"
+             hyman:radius="550dp">
+            <!--主按钮-->
+            <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/composer_button"
+            >
+
+
+
+            <!--主按钮-->
+            <ImageView
+                android:id="@+id/id_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/composer_icn_plus"
+                />
+
+        </RelativeLayout>
+            <ImageView
+            android:id="@+id/sechch"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/sechch"
+
+            />
+            <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/kecheng2png"
+            android:tag="Kecheng"
+            />
+            <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/fenxiang"
+            android:tag="Fenxiang"
+            />
+            <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/my"
+            android:tag="Sechch"
+            />
+         </com.example.xiti8.myapplication_listview.MyMenu>
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

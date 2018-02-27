@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <!--
+        android:numColumns=""   每一行显示多少列
+        android:horizontalSpacing=""    两列之间的间距
+        android:verticalSpacing=""  两行之间的间距
+    -->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/hdp"
+        />
+
+    <GridView
+        android:id="@+id/GridView_online"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:horizontalSpacing="20dp"
+        android:verticalSpacing="20dp"
+        android:layout_marginTop="20dp"
+        >
+
+
+
+    </GridView>
+
+</LinearLayout>

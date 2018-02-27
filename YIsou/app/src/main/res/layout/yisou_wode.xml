@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:hyman="http://schemas.android.com/apk/com.example.xiti8.myapplication_listview"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/log"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:paddingBottom="50dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/login_user"
+                    />
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/login_user_password"
+                    />
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:password="true"
+              />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/login_shap"
+                android:textColor="#ffff"
+                android:text="登录"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/login2_shap"
+                android:textColor="#57c98c"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="注册"/>
+
+        </LinearLayout>
+
+
+
+        <com.example.xiti8.myapplication_listview.MyMenu
+            android:id="@+id/mymenu"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            hyman:position="right_bottom"
+            hyman:radius="550dp"
+            >
+            <!--主按钮-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/composer_button"
+                >
+                <!--主按钮-->
+                <ImageView
+                    android:id="@+id/id_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/composer_icn_plus"
+                    />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/sechch"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/sechch"
+
+                />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/kecheng2png"
+                android:tag="Kecheng"
+                />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/fenxiang"
+                android:tag="Fenxiang"
+                />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/my"
+                android:tag="Sechch"
+                />
+
+
+        </com.example.xiti8.myapplication_listview.MyMenu>
+
+    </FrameLayout>
+
+
+</LinearLayout>
